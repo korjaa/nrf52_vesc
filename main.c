@@ -69,7 +69,7 @@
 #include "crc.h"
 
 #ifndef MODULE_BUILTIN
-#define MODULE_BUILTIN					1
+#define MODULE_BUILTIN					0
 #endif
 
 #ifndef MODULE_RD2
@@ -173,10 +173,10 @@ static pm_peer_id_t m_peer_to_be_deleted = PM_PEER_ID_INVALID;
 #define LED_ON()						nrf_gpio_pin_set(NRF_GPIO_PIN_MAP(1, 1)); nrf_gpio_pin_clear(LED_PIN)
 #define LED_OFF()						nrf_gpio_pin_set(LED_PIN)
 #else
-#define UART_RX							11
-#define UART_TX							8
-#define UART_TX_DISABLED				25
-#define LED_PIN							7
+#define UART_RX							29
+#define UART_TX							31
+#define UART_TX_DISABLED				2
+#define LED_PIN							12
 #endif
 #else
 #if MODULE_BUILTIN
