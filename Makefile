@@ -11,7 +11,7 @@ TARGETS          := nrf52840_xxaa
 endif
 
 # So that eclipse can use the build output for indexing.
-VERBOSE=1
+VERBOSE=0
 
 CFLAGS += $(build_args)
 
