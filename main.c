@@ -173,6 +173,10 @@ static pm_peer_id_t m_peer_to_be_deleted = PM_PEER_ID_INVALID;
 #define LED_ON()						nrf_gpio_pin_set(NRF_GPIO_PIN_MAP(1, 1)); nrf_gpio_pin_clear(LED_PIN)
 #define LED_OFF()						nrf_gpio_pin_set(LED_PIN)
 #else
+#undef LED_ON
+#undef LED_OFF
+#define LED_ON()						nrf_gpio_pin_clear(LED_PIN)
+#define LED_OFF()						nrf_gpio_pin_set(LED_PIN)
 #define UART_RX							29
 #define UART_TX							31
 #define UART_TX_DISABLED				2
