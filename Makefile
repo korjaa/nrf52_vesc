@@ -17,6 +17,7 @@ CFLAGS += $(build_args)
 
 # Path to the NRF52 SDK. Change if needed.
 SDK_ROOT := ${HOME}/workspace/nRF5_SDK_15.3.0_59ac345
+export GNU_INSTALL_ROOT := ${HOME}/bin/gcc-arm-none-eabi-7-2018-q2-update/bin/
 
 TARGET_PATH := $(OUTPUT_DIRECTORY)/$(TARGETS).hex
 
